@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "dep-gcp"
+version = "0.1.0"
+description = ""
+authors = ["Pedro Henrique Gonçalves da Silva <p.silva@playson.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+pandas = "^2.1.4"
+google-cloud-storage = "^2.14.0"
+google-cloud-api-keys = "^0.5.5"
+google-cloud-language = "^2.12.0"
+gcloud = "^0.18.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
