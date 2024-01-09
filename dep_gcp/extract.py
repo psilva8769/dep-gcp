@@ -11,9 +11,7 @@ def create_connector(host: str, user: str, password: str, database: str):
     return database
 
 connector = create_connector('localhost', 'root', 'depgcP@123', 'video_games')
+
 cursor = connector.cursor()
 cursor.execute('SELECT * FROM game_publisher')
 result = cursor.fetchall()
-
-for row in result:
-    print(row)
