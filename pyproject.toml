@@ -2,17 +2,14 @@
 name = "dep-gcp"
 version = "0.1.0"
 description = ""
-authors = ["Pedro Henrique Gonçalves da Silva <p.silva@playson.com>"]
+authors = ["Pedro Henrique Gonçalves da Silva <pedro.silva8769@outlook.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.12"
+python="^3.12"
+faker = "^22.2.0"
 pandas = "^2.1.4"
-google-cloud-storage = "^2.14.0"
-google-cloud-api-keys = "^0.5.5"
-google-cloud-language = "^2.12.0"
-gcloud = "^0.18.3"
-
+openpyxl = "^3.1.2"
 
 [build-system]
 requires = ["poetry-core"]

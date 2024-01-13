@@ -1,8 +1,8 @@
 import pandas as pd
-import Faker
-import openpyxl
+from faker import Faker
 
 fake = Faker()
+
 num_rows = 100
 
 test_data = {
@@ -13,6 +13,6 @@ test_data = {
     'Date of Birth': [fake.date_of_birth() for _ in range(num_rows)]
 }
 
-df = pd.DataFrame(data)
+df = pd.DataFrame(test_data)
 
-df.to_excel('fake_data.xlsx', index=False)
+df.to_excel('fake_data.xlsx', index=False, header=True)
